@@ -1,10 +1,13 @@
-// import NavBar from "@/lego/NavBar";
 import AllEmotions from "@/components/AllEmotions";
 import ContactUs from "@/components/ContactUs";
+//import { Vortex } from "@/components/ui/vortex";
 import { VortexDemo } from "@/components/VortexDemo";
-//import Image from "next/image";
+// import Image from "next/image";
+//import Footer from "@/components/Footer";
+//import NavBar from "@/components/NavBar";
+import React from "react";
 
-export default function Home() {
+const page = () => {
   return (
     <>
       <VortexDemo />
@@ -21,4 +24,6 @@ export default function Home() {
       <ContactUs />
     </>
   );
-}
+};
+
+export default page;
