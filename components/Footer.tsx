@@ -2,7 +2,14 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className=" bg-black p-2 w-full pt-8  border-t border-gray-200 text-center">
+    <div
+      className=" bg-black p-2 w-full pt-8  border-t border-gray-200 text-center"
+      // style={{
+      //   backgroundImage: `radial-gradient(circle at 0.5px 0.5px, rgba(6,182,212,0.2) 0.5px ,transparent 0)`,
+      //   backgroundSize: "8px 8px ",
+      //   backgroundRepeat: "repeat",
+      // }}
+    >
       <a className="text-indigo-500">msonarrohit6@gmail.com</a>
       <p className=" text-white leading-normal my-5">
         Rohit Kumar
