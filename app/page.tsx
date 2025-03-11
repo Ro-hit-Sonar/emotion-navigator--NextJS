@@ -1,72 +1,69 @@
 import AllEmotions from "@/components/AllEmotions";
 import ContactUs from "@/components/Contact";
-// import Image from "next/image";
 import React from "react";
 
-const page = () => {
+const Page = () => {
   return (
     <>
-      <div
-        className="flex h-screen w-full bg-black "
-        // style={{
-        //   backgroundImage: `radial-gradient(circle at 0.5px 0.5px, rgba(6,182,212,0.2) 0.5px ,transparent 0)`,
-        //   backgroundSize: "8px 8px ",
-        //   backgroundRepeat: "repeat",
-        // }}
-      >
+      {/* Hero Section */}
+      <div className="relative flex h-screen w-full bg-black">
         <div
-          className="mt-1 h-full w-full bg-cover bg-center"
-          style={{ backgroundImage: "url('/health5.png')" }}
-        >
-          <div className=" font-mono font-extralight text-white flex justify-end items-end mr-24 mt-80 text-3xl ">
-            <h1> Emotions are chemicals with meaning </h1>
-          </div>
-          <div className=" font-mono font-extralight text-white flex justify-end items-end mr-24 mt-8 ">
-            <p>Understand , Uncover & take control of your journey.</p>
-          </div>
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: "url('/health5.png')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
+        />
+        <div className="relative z-10 flex flex-col items-end justify-end h-full w-full px-6 sm:px-12 lg:px-24 text-white">
+          <h1 className="font-mono font-extralight text-2xl sm:text-3xl lg:text-4xl">
+            Emotions are chemicals with meaning
+          </h1>
+          <p className="font-mono font-extralight text-base sm:text-lg lg:text-xl mt-4">
+            Understand, Uncover & take control of your journey.
+          </p>
         </div>
       </div>
-      <div className="bg-black">
-        <p className="   text-center  text-white text-4xl font-bold font-mono">
-          {" "}
-          <br />
-          <br />
+
+      {/* Feeling Prompt */}
+      <div className="bg-black py-16 text-center">
+        <p className="text-white text-2xl sm:text-3xl md:text-4xl font-bold font-mono">
           So what are you feeling today?
         </p>
       </div>
+
+      {/* Emotions Section */}
       <div
-        className="mt-1 min-h-screen w-full bg-cover bg-center"
+        className="min-h-screen w-full bg-cover bg-center"
         style={{ backgroundImage: "url('/mental.png')" }}
       >
         <AllEmotions />
       </div>
+
+      {/* Confession Section */}
       <div
-        className="mt-1 min-h-screen w-full bg-cover bg-center"
+        className="min-h-screen w-full bg-cover bg-center flex flex-col items-start justify-center px-6 sm:px-12 lg:px-24 py-16 text-white"
         style={{ backgroundImage: "url('/health3.png')" }}
       >
-        <div className=" font-mono font-extralight text-white flex justify-start items-start ml-24 mt-20 text-3xl ">
-          <h1> Together, We Rise Stronger! </h1>
-        </div>
-        <div className=" font-mono font-extralight text-white  justify-start items-start  ml-24 mr-96 mt-8  text-justify">
-          <p>
-            Sometimes, keeping everything bottled up can feel like an endless
-            battle. We believe that sharing your story can be a powerful step
-            toward healing. In this space, you&lsquo;re invited to let your
-            heart speak—pour out your thoughts, feelings, and experiences
-            without judgment. If you’d like to engage in a conversation or
-            receive a reply, feel free to include your email address. However,
-            if you prefer to remain anonymous and simply share what’s weighing
-            on your heart, that&#39;s perfectly okay too. Below is the
-            confession box where you can express yourself freely, knowing that
-            every word contributes to a larger community of support. Remember,
-            expressing your emotions is not a sign of weakness, but a courageous
-            act of connection..
-          </p>
-        </div>
+        <h1 className="font-mono font-extralight text-2xl sm:text-3xl lg:text-4xl">
+          Together, We Rise Stronger!
+        </h1>
+        <p className="font-mono font-extralight text-sm sm:text-base md:text-lg leading-relaxed mt-4 max-w-3xl text-justify">
+          Sometimes, keeping everything bottled up can feel like an endless
+          battle. We believe that sharing your story can be a powerful step
+          toward healing. In this space, you’re invited to let your heart
+          speak—pour out your thoughts, feelings, and experiences without
+          judgment. If you’d like to engage in a conversation or receive a
+          reply, feel free to include your email address. However, if you prefer
+          to remain anonymous and simply share what’s weighing on your heart,
+          that&apos;s perfectly okay too.
+        </p>
       </div>
+
       <ContactUs />
     </>
   );
 };
 
-export default page;
+export default Page;
