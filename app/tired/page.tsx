@@ -15,28 +15,23 @@ const Page = () => {
               <div className="h-full bg-gray-100 p-8 rounded">
                 <p className="text-center text-xl font-semibold text-blue-600 mb-4 ">
                   {" "}
-                  Aroused
+                  Sleepy
                 </p>
                 <p className="leading-relaxed mb-6 ">
-                  Synth chartreuse iPhone lomo cray raw denim brunch everyday
-                  carry neutra before they sold out fixies microdosing. Tacos
-                  pinterest fanny pack venmo, post-ironic heirloom try-hard
-                  pabst authentic iceland. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                  ea commodo consequat. Duis aute irure dolor in reprehenderit
-                  in voluptate velit esse cillum dolore eu fugiat nulla
-                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                  in culpa qui officia deserunt mollit anim id est laborum.
-                  .Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
+                  Sleepy isn’t just about needing a nap. Sometimes, it’s your
+                  body whispering, “Hey, we’ve been running on fumes.” You might
+                  feel like the world is moving faster than you can keep up,
+                  your eyelids heavy, and your thoughts foggy. Imagine this:
+                  You’ve been working long hours, juggling responsibilities,
+                  trying to stay &quot;on&quot; all the time. You finally sit
+                  down to rest, and your body melts into the chair—finally
+                  allowed to just be. Sleepiness is your body’s gentle rebellion
+                  against the pressure to always stay productive. It&apos;s okay
+                  to slow down. You’re not lazy. You’re human. Your body and
+                  mind are asking for rest—not just physically, but emotionally.
+                  Honor that. A good sleep can often do more than a long to-do
+                  list ever could. Sometimes, the kindest thing you can do for
+                  yourself is close your eyes.
                 </p>
                 <a className="inline-flex items-center">
                   <span className="flex-grow flex flex-col pl-4">
@@ -52,28 +47,23 @@ const Page = () => {
               <div className="h-full bg-gray-100 p-8 rounded">
                 <p className="text-center text-xl font-semibold text-red-700 mb-4 ">
                   {" "}
-                  Aroused
+                  Unfocused
                 </p>
                 <p className="leading-relaxed mb-6">
-                  Synth chartreuse iPhone lomo cray raw denim brunch everyday
-                  carry neutra before they sold out fixies microdosing. Tacos
-                  pinterest fanny pack venmo, post-ironic heirloom try-hard
-                  pabst authentic iceland. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                  ea commodo consequat. Duis aute irure dolor in reprehenderit
-                  in voluptate velit esse cillum dolore eu fugiat nulla
-                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                  in culpa qui officia deserunt mollit anim id est laborum.
-                  .Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
+                  Unfocused doesn’t always mean you’re distracted or careless.
+                  It can be your brain’s way of saying, “I need a break.”
+                  Thoughts don’t line up neatly, your mind drifts, and even
+                  simple tasks feel like a mountain to climb. For example: You
+                  sit down to finish something important, but you reread the
+                  same sentence three times, your mind already off somewhere
+                  else. You try harder, but the fog just thickens. You might
+                  even blame yourself—but this isn’t about discipline. It’s
+                  about mental overload or emotional undercurrent. Being
+                  unfocused is a sign that your energy is scattered—maybe
+                  because you haven’t had time to pause or process. So instead
+                  of pushing harder, try getting curious. What’s taking up space
+                  in your mind? What’s asking to be noticed? Bring yourself back
+                  gently. Refocus doesn’t come from force—it comes from care.
                 </p>
                 <a className="inline-flex items-center">
                   <span className="flex-grow flex flex-col pl-4">

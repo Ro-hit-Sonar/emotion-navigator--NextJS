@@ -15,28 +15,21 @@ const Page = () => {
               <div className="h-full bg-gray-100 p-8 rounded">
                 <p className="text-center text-xl font-semibold text-blue-600 mb-4 ">
                   {" "}
-                  Aroused
+                  Indifferent
                 </p>
                 <p className="leading-relaxed mb-6 ">
-                  Synth chartreuse iPhone lomo cray raw denim brunch everyday
-                  carry neutra before they sold out fixies microdosing. Tacos
-                  pinterest fanny pack venmo, post-ironic heirloom try-hard
-                  pabst authentic iceland. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                  ea commodo consequat. Duis aute irure dolor in reprehenderit
-                  in voluptate velit esse cillum dolore eu fugiat nulla
-                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                  in culpa qui officia deserunt mollit anim id est laborum.
-                  .Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
+                  Feeling indifferent doesn’t always mean you don’t care—it can
+                  also mean you’re emotionally exhausted or unsure where to
+                  place your energy. Maybe you’re protecting yourself from
+                  getting hurt. Or maybe things have felt overwhelming for so
+                  long that your mind has chosen to detach, just to make it
+                  through. Imagine this: A friend shares exciting news, and
+                  while you smile and nod, inside… there’s nothing. You’re not
+                  upset, just blank. Not sad, not angry—just disconnected.
+                  That’s indifference. It’s okay to feel this way. It might be
+                  your mind’s way of asking for rest. It could be a sign you’re
+                  emotionally overloaded, or even that something deeper needs
+                  attention. You’re not broken—you’re just human.
                 </p>
                 <a className="inline-flex items-center">
                   <span className="flex-grow flex flex-col pl-4">
@@ -52,28 +45,21 @@ const Page = () => {
               <div className="h-full bg-gray-100 p-8 rounded">
                 <p className="text-center text-xl font-semibold text-red-700 mb-4 ">
                   {" "}
-                  Aroused
+                  Apathetic
                 </p>
                 <p className="leading-relaxed mb-6">
-                  Synth chartreuse iPhone lomo cray raw denim brunch everyday
-                  carry neutra before they sold out fixies microdosing. Tacos
-                  pinterest fanny pack venmo, post-ironic heirloom try-hard
-                  pabst authentic iceland. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                  ea commodo consequat. Duis aute irure dolor in reprehenderit
-                  in voluptate velit esse cillum dolore eu fugiat nulla
-                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                  in culpa qui officia deserunt mollit anim id est laborum.
-                  .Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
+                  Apathy can feel like your emotions have gone quiet. You’re not
+                  moved, not motivated, and things that once lit you up now feel
+                  dull. It’s like watching life from behind a foggy window. You
+                  want to care—you just don’t know how right now. Here’s a
+                  scenario: You used to enjoy painting, going out, or watching
+                  movies. Now, even choosing something to eat feels like a task.
+                  You go through the motions, but without the feeling. That’s
+                  apathy. This emotion often shows up when you’re mentally or
+                  emotionally burnt out. It’s not laziness or a flaw—it’s your
+                  body’s way of saying, “I’m tired.” Give yourself permission to
+                  slow down and feel again, gently, in your own time. You’re not
+                  alone in this.
                 </p>
                 <a className="inline-flex items-center">
                   <span className="flex-grow flex flex-col pl-4">

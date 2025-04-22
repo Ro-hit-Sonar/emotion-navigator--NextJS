@@ -6,7 +6,7 @@ const SurprisedEmotion: React.FC = () => {
     <div className=" bg-black min-h-screen bg-[ #0a0a0a] flex items-center justify-center">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-6 w-full max-w-screen-lg">
         {/* Emotion Blocks */}
-        <Link href="/starrtled">
+        <Link href="/startled">
           <div className="bg-[#FF4500] text-black text-xl font-bold h-28 flex justify-center items-center rounded-lg shadow-lg hover:scale-105 transition-transform cursor-pointer">
             Startled
           </div>

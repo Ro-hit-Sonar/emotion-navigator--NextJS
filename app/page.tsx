@@ -5,7 +5,6 @@ import React from "react";
 const Page = () => {
   return (
     <>
-      {/* Hero Section */}
       <div className="relative flex h-screen w-full bg-black">
         <div
           className="absolute inset-0 bg-cover bg-center"
@@ -26,14 +25,12 @@ const Page = () => {
         </div>
       </div>
 
-      {/* Feeling Prompt */}
       <div className="bg-black py-16 text-center">
         <p className="text-white text-2xl sm:text-3xl md:text-4xl font-bold font-mono">
           So what are you feeling today?
         </p>
       </div>
 
-      {/* Emotions Section */}
       <div
         className="min-h-screen w-full bg-cover bg-center"
         style={{ backgroundImage: "url('/mental.png')" }}
@@ -41,7 +38,6 @@ const Page = () => {
         <AllEmotions />
       </div>
 
-      {/* Confession Section */}
       <div
         className="min-h-screen w-full bg-cover bg-center flex flex-col items-start justify-center px-6 sm:px-12 lg:px-24 py-16 text-white"
         style={{ backgroundImage: "url('/health3.png')" }}
