@@ -1,7 +1,16 @@
+"use client";
+
 import Link from "next/link";
 import React from "react";
 
 const NavBar = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div
       className="bg-black pb-8 font-mono"
@@ -23,15 +32,21 @@ const NavBar = () => {
             <Link href="/" className="mr-5 hover:text-white">
               Home
             </Link>
-            <Link href="/get-started" className="mr-5 hover:text-white">
+            <button
+              onClick={() => scrollToSection("get-started")}
+              className="mr-5 hover:text-white cursor-pointer"
+            >
               Get Started
-            </Link>
+            </button>
             <Link href="/good_reads" className="mr-5 hover:text-white">
               Good Reads
             </Link>
-            <Link href="/confess" className="mr-5 hover:text-white">
+            <button
+              onClick={() => scrollToSection("confess")}
+              className="mr-5 hover:text-white cursor-pointer"
+            >
               Confess
-            </Link>
+            </button>
           </nav>
         </div>
       </header>
