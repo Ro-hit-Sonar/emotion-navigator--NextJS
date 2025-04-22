@@ -53,10 +53,10 @@ const page = () => {
             battle. We believe that sharing your story can be a powerful step
             toward healing. In this space, you&lsquo;re invited to let your
             heart speak—pour out your thoughts, feelings, and experiences
-            without judgment. If you'd like to engage in a conversation or
+            without judgment. If you&apos;d like to engage in a conversation or
             receive a reply, feel free to include your email address. However,
-            if you prefer to remain anonymous and simply share what's weighing
-            on your heart, that&#39;s perfectly okay too. Below is the
+            if you prefer to remain anonymous and simply share what&apos;s
+            weighing on your heart, that&#39;s perfectly okay too. Below is the
             confession box where you can express yourself freely, knowing that
             every word contributes to a larger community of support. Remember,
             expressing your emotions is not a sign of weakness, but a courageous
