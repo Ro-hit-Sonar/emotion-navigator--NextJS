@@ -127,7 +127,7 @@ const EmotionJournal = () => {
     let yPosition = 50;
     entries
       .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-      .forEach((entry, index) => {
+      .forEach((entry) => {
         // Debug log for each entry
         console.log("Processing entry:", entry);
 
