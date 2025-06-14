@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const BadEmotion: React.FC = () => {
   return (
-    <div className=" bg-black min-h-screen bg-[ #0a0a0a] flex items-center justify-center">
+    <div className="flex items-center justify-center">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-6 w-full max-w-screen-lg">
         {/* Emotion Blocks */}
         <Link href="/bored">

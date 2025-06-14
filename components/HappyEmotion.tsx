@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import Link from "next/link";
 
 const HappyEmotion: React.FC = () => {
@@ -21,7 +21,7 @@ const HappyEmotion: React.FC = () => {
             Interested
           </div>
         </Link>
-        <Link href="/Proud">
+        <Link href="/proud">
           <div className="bg-[#8A2BE2] text-black text-xl font-bold h-28 flex justify-center items-center rounded-lg shadow-lg hover:scale-105 transition-transform cursor-pointer">
             Proud
           </div>

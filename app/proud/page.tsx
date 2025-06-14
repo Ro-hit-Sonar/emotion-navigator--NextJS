@@ -1,25 +1,58 @@
-import React from "react";
+"use client";
 
-const Page = () => {
+import React from "react";
+import { motion } from "framer-motion";
+// import { Heart, Sparkles, Smile, Star, Brain } from "lucide-react";
+
+const PlayfulPage = () => {
   return (
-    <div className="bg-black">
-      <section className="text-gray-600 body-font">
-        <div className="container px-5 py-24 mx-auto">
-          <h1 className="  font-mono font-medium title-font text-gray-100 mb-12 text-center">
-            Pride can feel uplifting and empowering. What’s making you feel
-            proud today? Let’s take a moment to celebrate it.
-            <br />
-            The End result should be one amonst these two !
-          </h1>
-          <div className="flex flex-wrap -m-4">
-            <div className="p-4 md:w-1/2 w-full">
-              <div className="h-full bg-gray-100 p-8 rounded">
-                <p className="text-center text-xl font-semibold text-blue-600 mb-4 ">
-                  {" "}
-                  Successful
-                </p>
-                <p className="leading-relaxed mb-6 ">
-                  Feeling successful is a fulfilling emotion that arises when
+    <div className="bg-black min-h-screen">
+      <div className="container mx-auto px-4 py-12">
+        {/* Hero Section */}
+
+        {/* Main Content */}
+
+        {/* Emotion Selection */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          className="mb-16"
+        >
+          <h2 className="text-2xl font-bold mb-6 text-white text-center">
+            Explore Your Emotion
+          </h2>
+
+          <div className="w-full">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="text-center mb-12"
+            >
+              <h1 className="text-2xl md:text-3xl font-bold text-white mb-4">
+              Pride can feel uplifting and empowering. What’s making you feel
+              proud today? Let’s take a moment to celebrate it.
+              </h1>
+              <p className="text-gray-400 text-lg">
+                The end result should be one amongst these two!
+              </p>
+            </motion.div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* Aroused Card */}
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                whileHover={{ scale: 1.02 }}
+                className="bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-xl p-8 shadow-xl border border-blue-500/20"
+              >
+                <div className="flex items-center mb-6">
+                  <h2 className="text-2xl font-bold text-blue-500">Successful</h2>
+                </div>
+                <p className="text-gray-300 leading-relaxed">
+                Feeling successful is a fulfilling emotion that arises when
                   you recognize and celebrate your achievements, no matter how
                   big or small. Imagine the quiet satisfaction of finishing a
                   challenging project or reaching a personal milestone—moments
@@ -38,25 +71,24 @@ const Page = () => {
                   your efforts are meaningful. Recognize that success is not
                   just a destination—it’s an ongoing process of learning,
                   growing, and becoming the best version of yourself.
+
+
                 </p>
-                <a className="inline-flex items-center">
-                  <span className="flex-grow flex flex-col pl-4">
-                    <span className="title-font font-medium text-gray-900">
-                      Take Care
-                    </span>
-                    <span className="text-gray-500 text-sm"> BYE :) </span>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div className="p-4 md:w-1/2 w-full">
-              <div className="h-full bg-gray-100 p-8 rounded">
-                <p className="text-center text-xl font-semibold text-red-700 mb-4 ">
-                  {" "}
-                  Confident
-                </p>
-                <p className="leading-relaxed mb-6">
-                  Feeling confident is a warm, steady assurance that arises from
+              </motion.div>
+
+              {/* Cheeky Card */}
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                whileHover={{ scale: 1.02 }}
+                className="bg-gradient-to-br from-pink-500/10 to-red-500/10 rounded-xl p-8 shadow-xl border border-pink-500/20"
+              >
+                <div className="flex items-center mb-6">
+                  <h2 className="text-2xl font-bold text-pink-500">Confident</h2>
+                </div>
+                <p className="text-gray-300 leading-relaxed">
+                Feeling confident is a warm, steady assurance that arises from
                   knowing your own worth and abilities. Picture yourself
                   stepping into a room with your head held high, secure in the
                   knowledge that you have much to offer. This emotion is not
@@ -74,23 +106,31 @@ const Page = () => {
                   your inner strength and allow your self-assurance to shine,
                   inspiring you to explore life’s opportunities with both
                   courage and optimism.
-                </p>
-                <a className="inline-flex items-center">
-                  <span className="flex-grow flex flex-col pl-4">
-                    <span className="title-font font-medium text-gray-900">
-                      Take Care
-                    </span>
-                    <span className="text-gray-500 text-sm">BYE :) </span>
-                  </span>
-                </a>
-              </div>
+                  </p>
+              </motion.div>
             </div>
+
+            {/* Take Care Section */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="text-center mt-12"
+            >
+              <div className="inline-block bg-gradient-to-r from-pink-500/10 to-purple-500/10 rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-white mb-2">
+                  Take Care
+                </h3>
+                <p className="text-gray-400">BYE :)</p>
+              </div>
+            </motion.div>
           </div>
-        </div>
-      </section>
-      ;
+        </motion.div>
+
+        {/* Encouragement Section */}
+      </div>
     </div>
   );
 };
 
-export default Page;
+export default PlayfulPage;

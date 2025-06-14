@@ -4,6 +4,8 @@ import AllEmotions from "@/components/AllEmotions";
 import ContactUs from "@/components/ContactUs";
 import React from "react";
 import { motion } from "framer-motion";
+import { ArrowRight, Heart, Brain, Users, BookOpen } from "lucide-react";
+import Link from "next/link";
 
 const Page = () => {
   return (
@@ -35,8 +37,91 @@ const Page = () => {
           >
             Understand, Uncover & take control of your journey.
           </motion.p>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="mt-8"
+          >
+            <a
+              href="#get-started"
+              className="inline-flex items-center px-6 py-3 bg-white text-black font-mono rounded-full hover:bg-gray-100 transition-colors duration-200"
+            >
+              Start Your Journey <ArrowRight className="ml-2" size={20} />
+            </a>
+          </motion.div>
         </div>
       </div>
+
+      {/* Features Section */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        className="bg-black py-16 sm:py-24"
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              className="bg-gray-900 p-6 rounded-lg"
+            >
+              <Heart className="w-12 h-12 text-white mb-4" />
+              <h3 className="text-white text-xl font-mono mb-2">
+                Emotional Intelligence
+              </h3>
+              <p className="text-gray-400 font-mono">
+                Develop deeper understanding of your emotions and their impact
+                on your life.
+              </p>
+            </motion.div>
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              className="bg-gray-900 p-6 rounded-lg"
+            >
+              <Brain className="w-12 h-12 text-white mb-4" />
+              <h3 className="text-white text-xl font-mono mb-2">
+                Mental Wellness
+              </h3>
+              <p className="text-gray-400 font-mono">
+                Tools and resources to maintain and improve your mental health.
+              </p>
+            </motion.div>
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              className="bg-gray-900 p-6 rounded-lg"
+            >
+              <Users className="w-12 h-12 text-white mb-4" />
+              <h3 className="text-white text-xl font-mono mb-2">
+                Community Support
+              </h3>
+              <p className="text-gray-400 font-mono">
+                Connect with others on similar emotional journeys.
+              </p>
+            </motion.div>
+            <Link href="/journal">
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="bg-gradient-to-br from-pink-500/20 to-purple-700/30 p-6 rounded-lg border border-pink-500/30 cursor-pointer"
+              >
+                <BookOpen className="w-12 h-12 text-pink-500 mb-4" />
+                <h3 className="text-white text-xl font-mono mb-2">
+                  Emotion Journal
+                </h3>
+                <p className="text-gray-300 font-mono">
+                  Track your emotional journey with our beautiful journaling
+                  feature.
+                </p>
+                <div className="mt-4 flex items-center text-pink-500">
+                  <span className="text-sm font-mono">Start Journaling</span>
+                  <ArrowRight className="ml-2" size={16} />
+                </div>
+              </motion.div>
+            </Link>
+          </div>
+        </div>
+      </motion.div>
 
       <motion.div
         initial={{ opacity: 0 }}
@@ -57,6 +142,37 @@ const Page = () => {
       >
         <AllEmotions />
       </div>
+
+      {/* Testimonials Section */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        className="bg-black py-16 sm:py-24"
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-white text-3xl font-mono text-center mb-12">
+            What Our Community Says
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-gray-900 p-6 rounded-lg">
+              <p className="text-gray-400 font-mono italic">
+                &ldquo;This platform helped me understand my emotions better
+                than any therapy session I&apos;ve had.&rdquo;
+              </p>
+              <p className="text-white font-mono mt-4">- Sarah M.</p>
+            </div>
+            <div className="bg-gray-900 p-6 rounded-lg">
+              <p className="text-gray-400 font-mono italic">
+                &ldquo;The community support here is incredible. I never feel
+                alone in my journey.&rdquo;
+              </p>
+              <p className="text-white font-mono mt-4">- James K.</p>
+            </div>
+          </div>
+        </div>
+      </motion.div>
 
       <motion.div
         initial={{ opacity: 0, y: 20 }}

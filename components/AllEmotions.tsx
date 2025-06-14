@@ -1,71 +1,76 @@
 "use client";
 
-import React from "react";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
-
-const emotionVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: i * 0.1,
-      duration: 0.5,
-      ease: "easeOut",
-    },
-  }),
-};
+import { ChevronDown } from "lucide-react";
+import { useState } from "react";
 
 const emotions = [
-  { name: "Happy", color: "bg-yellow-300", textColor: "text-black" },
-  { name: "Surprised", color: "bg-blue-300", textColor: "text-black" },
-  { name: "Bad", color: "bg-gray-500", textColor: "text-white" },
-  { name: "Fearful", color: "bg-purple-400", textColor: "text-black" },
-  { name: "Angry", color: "bg-orange-400", textColor: "text-black" },
-  { name: "Disgusted", color: "bg-gray-700", textColor: "text-white" },
-  { name: "Sad", color: "bg-blue-500", textColor: "text-white" },
+  { name: "Happy", color: "#FCD34D", textColor: "text-black" },
+  { name: "Surprised", color: "#93C5FD", textColor: "text-black" },
+  { name: "Bad", color: "#6B7280", textColor: "text-white" },
+  { name: "Fearful", color: "#C084FC", textColor: "text-black" },
+  { name: "Angry", color: "#FB923C", textColor: "text-black" },
+  { name: "Disgusted", color: "#4B5563", textColor: "text-white" },
+  { name: "Sad", color: "#3B82F6", textColor: "text-white" },
 ];
 
 const AllEmotions: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedEmotion, setSelectedEmotion] = useState<string | null>(null);
+  const router = useRouter();
+
+  const handleEmotionSelect = (emotion: string) => {
+    setSelectedEmotion(emotion);
+    setIsOpen(false);
+    router.push(`/${emotion.toLowerCase()}`);
+  };
+
   return (
     <div className="min-h-screen bg-[#0a0a0a] flex items-center justify-center py-8 sm:py-12">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 p-4 sm:p-6 w-full max-w-screen-xl">
-        {emotions.map((emotion, index) => (
-          <motion.div
-            key={emotion.name}
-            custom={index}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={emotionVariants}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+      <div className="w-full max-w-xl px-4">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="relative"
+        >
+          <div className="text-white text-2xl font-mono mb-6 text-center">
+            I am feeling...
+          </div>
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="w-full bg-white text-black font-mono text-xl py-6 px-8 rounded-xl flex items-center justify-between hover:bg-gray-100 transition-colors duration-200 shadow-lg"
           >
-            <Link href={`/${emotion.name.toLowerCase()}`}>
-              <div
-                className={`
-                ${emotion.color} 
-                ${emotion.textColor} 
-                text-lg sm:text-xl font-bold 
-                h-24 sm:h-28 
-                flex justify-center items-center 
-                rounded-lg 
-                shadow-lg 
-                hover:shadow-xl 
-                transition-all 
-                duration-300 
-                cursor-pointer
-                transform
-                hover:rotate-1
-                hover:translate-y-[-2px]
-              `}
-              >
-                {emotion.name}
-              </div>
-            </Link>
-          </motion.div>
-        ))}
+            {selectedEmotion || "Select an emotion"}
+            <ChevronDown
+              className={`transform transition-transform duration-200 ${
+                isOpen ? "rotate-180" : ""
+              }`}
+              size={24}
+            />
+          </button>
+
+          {isOpen && (
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              className="absolute z-10 w-full mt-2 bg-white rounded-xl shadow-xl overflow-hidden"
+            >
+              {emotions.map((emotion) => (
+                <button
+                  key={emotion.name}
+                  onClick={() => handleEmotionSelect(emotion.name)}
+                  className={`w-full text-left px-8 py-4 hover:bg-opacity-90 transition-colors duration-200 ${emotion.textColor} text-lg font-medium`}
+                  style={{ backgroundColor: emotion.color }}
+                >
+                  {emotion.name}
+                </button>
+              ))}
+            </motion.div>
+          )}
+        </motion.div>
       </div>
     </div>
   );
