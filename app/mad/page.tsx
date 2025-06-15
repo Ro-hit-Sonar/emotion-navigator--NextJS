@@ -31,8 +31,8 @@ const PlayfulPage = () => {
               className="text-center mb-12"
             >
               <h1 className="text-2xl md:text-3xl font-bold text-white mb-4">
-                Feeling mad can mean your boundaries were crossed. Let’s
-                identify what happened and how to assert yourself.
+                Feeling mad can mean your boundaries were crossed. Lets identify
+                what happened and how to assert yourself.
               </h1>
               <p className="text-gray-400 text-lg">
                 The end result should be one amongst these two!
@@ -99,7 +99,7 @@ const PlayfulPage = () => {
                   to achieve. Channel that energy into setting personal goals,
                   enhancing your skills, or cultivating gratitude for your
                   unique journey. Acknowledge your jealousy with
-                  kindness—understanding that it’s a natural, if uncomfortable,
+                  kindness—understanding that its a natural, if uncomfortable,
                   part of the human experience. Over time, as you work toward
                   fulfilling your own aspirations, the sharp edge of jealousy
                   may soften, replaced by a healthier, more confident sense of
