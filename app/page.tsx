@@ -4,8 +4,7 @@ export default function Home() {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-indigo-100 via-purple-100 to-pink-100 p-6">
       <div className="bg-white shadow-xl rounded-lg p-8 max-w-xl text-center">
         <h1 className="text-3xl font-bold text-gray-800 mb-4">
-          Welcome to the Mental Health App
-        </h1>
+hello , due to some issue we are redirecting this project to another URL , please click it below and check the project        </h1>
         <p className="text-gray-600 mb-6 text-lg">
           Click the button below to navigate to the Emotion Navigator page.
         </p>
